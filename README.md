@@ -4,12 +4,14 @@
 `
 
 ### Get Started
-Using your own mobile phone SMS, you can use that as your own SMS API device.
+Use your smart phone SMS, you can use that as your own SMS API device.
 get the app here [download](http://ratatxt.com/app.apk)
 
-### Why we do it?
+### Development
 
 ### FAQs
+- Is the app supports Android 4.4.2 *KitKat* ?
+    - Yes, its the minimum sdk for the app so can use cheap smart phones
 - Can I use unlimited texting plans?
     - Yes
 - Can I use post-paid plans?
