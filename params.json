@@ -1,7 +1,7 @@
 {
   "name": "Ratatxt",
   "tagline": "SMS API",
-  "body": "### Try it out\r\n`\r\n// curl to api.ratatxt.com using test token\r\n`\r\n\r\n### How it works?\r\n\r\n### Why we do it?\r\n\r\n### Support or Contact\r\nHaving trouble with Pages? Check out our [documentation](https://help.github.com/pages) or [contact support](https://github.com/contact) and we’ll help you sort it out.",
+  "body": "### Try it out\r\n`\r\n// curl to api.ratatxt.com using test token\r\n`\r\n\r\n### How it used?\r\nUsing your own mobile phone SMS, you can use that as your own SMS API device.\r\nYou can also use variety of unlimited texting plans and post-paid plans to save cost.\r\n\r\n### Why we do it?\r\n\r\n\r\n### Contact\r\nHaving question or suggestion for us? [contact us](http://chiligarlic.com) and we’ll help you sort it out.",
   "google": "UA-53683442-1",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
