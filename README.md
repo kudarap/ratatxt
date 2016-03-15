@@ -3,9 +3,12 @@
 // curl to api.ratatxt.com using test token
 `
 
-### How it works?
+### How it used?
+Using your own mobile phone SMS, you can use that as your own SMS API device.
+You can also use variety of unlimited texting plans and post-paid plans to save cost.
 
 ### Why we do it?
 
-### Support or Contact
-Having trouble with Pages? Check out our [documentation](https://help.github.com/pages) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+### Contact
+Having question or suggestion for us? [contact us](http://chiligarlic.com) and we’ll help you sort it out.
