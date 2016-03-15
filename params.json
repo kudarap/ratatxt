@@ -1,7 +1,7 @@
 {
   "name": "Ratatxt",
   "tagline": "SMS API",
-  "body": "### Try it out\r\n`\r\n// curl to api.ratatxt.com using test token\r\n`\r\n\r\nuse your smart phone as own SMS API device\r\n\r\n### Get Started\r\n- Sign up first\r\n- Get the app [download](http://ratatxt.com/app.apk)\r\n- Log on the app\r\n\r\n### Development\r\n\r\n### FAQs\r\n- Is the app supports Android 4.4.2 *KitKat* ?\r\n    - Yes, its the minimum sdk for the app so can use cheap smart phones\r\n- Can I use unlimited texting plans?\r\n    - Yes\r\n- Can I use post-paid plans?\r\n    - Yes\r\n\r\n\r\n### Contact\r\nHaving question or suggestion for us? [contact us](http://chiligarlic.com) and we’ll help you sort it out.\r\n",
+  "body": "### Try it out\r\n`\r\n// curl to api.ratatxt.com using test token\r\n`\r\n\r\nuse your smart phone as own SMS API device\r\n\r\n### Get Started\r\n- Sign up first\r\n- Get the app [download](http://ratatxt.com/app.apk)\r\n- Log on the app\r\n\r\n### Development\r\nWe are on beta right now.\r\n\r\n### FAQs\r\n- Is the app supports Android 4.4.2 *KitKat* ?\r\n    - Yes, its the minimum sdk for the app so can use cheap smart phones\r\n- Can I use unlimited texting plans?\r\n    - Yes\r\n- Can I use post-paid plans?\r\n    - Yes\r\n\r\n\r\n### Contact\r\nHaving question or suggestion for us? [contact us](http://chiligarlic.com) and we’ll help you sort it out.\r\n",
   "google": "UA-53683442-1",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
