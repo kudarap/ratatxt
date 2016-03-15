@@ -9,6 +9,12 @@ You can also use variety of unlimited texting plans and post-paid plans to save 
 
 ### Why we do it?
 
+### FAQs
+- Can I use unlimited texting plans?
+    - Yes
+- Can I use post-paid plans?
+    - Yes
+
 
 ### Contact
 Having question or suggestion for us? [contact us](http://chiligarlic.com) and we’ll help you sort it out.
