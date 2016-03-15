@@ -3,9 +3,9 @@
 // curl to api.ratatxt.com using test token
 `
 
-### How it used?
+### Get Started
 Using your own mobile phone SMS, you can use that as your own SMS API device.
-You can also use variety of unlimited texting plans and post-paid plans to save cost.
+get the app here [download](http://ratatxt.com/app.apk)
 
 ### Why we do it?
 
