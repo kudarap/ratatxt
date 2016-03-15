@@ -3,9 +3,12 @@
 // curl to api.ratatxt.com using test token
 `
 
+use your smart phone as own SMS API device
+
 ### Get Started
-Use your smart phone SMS, you can use that as your own SMS API device.
-get the app here [download](http://ratatxt.com/app.apk)
+- Sign up first
+- Get the app [download](http://ratatxt.com/app.apk)
+- Log on the app
 
 ### Development
 
