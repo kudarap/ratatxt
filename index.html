@@ -18,22 +18,24 @@
         <h1>Ratatxt</h1>
         <p>SMS API</p>
 
-        <p class="view"><a href="https://github.com/ratatxt">View the Project on GitHub <small>/ratatxt</small></a></p>
+        <p class="view"><a href="https://github.com/javinc/ratatxt">View the Project on GitHub <small>javinc/ratatxt</small></a></p>
 
 
         <ul>
-          <li><a href="https://ratatxt.com/app/android">Download <strong>Android</strong></a></li>
-          <li><a href="https://ratatxt.com/app/ios">Download <strong>iOS</strong></a></li>
-          <li><a href="https://github.com/ratatxt">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/javinc/ratatxt/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/javinc/ratatxt/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/javinc/ratatxt">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
         <h3>
 <a id="try-it-out" class="anchor" href="#try-it-out" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Try it out</h3>
 
-<p><code>
-// curl to api.ratatxt.com using test token
-</code></p>
+<div class="highlight highlight-source-shell"><pre>curl -X POST -H <span class="pl-s"><span class="pl-pds">"</span>application-authorization: test_token<span class="pl-pds">"</span></span> -d <span class="pl-s"><span class="pl-pds">'</span>{</span>
+<span class="pl-s">    "text": "hello",</span>
+<span class="pl-s">    "origin": "09353708662",</span>
+<span class="pl-s">    "address": "09353535355"</span>
+<span class="pl-s">    }<span class="pl-pds">'</span></span> <span class="pl-s"><span class="pl-pds">"</span>http://api.ratatxt.com/outbox<span class="pl-pds">"</span></span></pre></div>
 
 <p>use your smart phone as own SMS API device</p>
 
@@ -42,7 +44,8 @@
 
 <ul>
 <li>Sign up first</li>
-<li>Get the app</li>
+<li>Get the app <a href="http://ratatxt.com/app.apk">download</a>
+</li>
 <li>Log on the app</li>
 </ul>
 
