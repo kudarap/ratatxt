@@ -1,7 +1,7 @@
 ### Try it out
-`
-// curl to api.ratatxt.com using test token
-`
+```sh
+curl to api.ratatxt.com using test token
+```
 
 use your smart phone as own SMS API device
 
