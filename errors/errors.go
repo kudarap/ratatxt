@@ -1,0 +1,62 @@
+package errors
+
+import (
+	"errors"
+	"fmt"
+
+	"github.com/kudarap/ratatxt/ratatxt"
+)
+
+// Errors represents application's errors.
+type Errors struct {
+	Type  ratatxt.Errors
+	Err   error
+	Fatal bool
+}
+
+// Implements error interface.
+func (e *Errors) Error() string {
+	return fmt.Sprintf("%s: %s", e.Type, e.Err)
+}
+
+// IsEqual checks errors with same Error Type.
+func (e *Errors) IsEqual(t ratatxt.Errors) bool {
+	return e.Type == t
+}
+
+func create(t ratatxt.Errors, e error, f bool) error {
+	return &Errors{t, e, f}
+}
+
+// New wraps error into an Errors with Type.
+func New(t ratatxt.Errors, e error) error {
+	return create(t, e, false)
+}
+
+// Fatal creates a fatal flagged error.
+func Fatal(t ratatxt.Errors, e error) error {
+	return create(t, e, true)
+}
+
+// Parse returns Errors value if available, else returns nil and ok is false.
+// When error is an ratatxt.Error type will create new error with that type
+// to handle them gracefully. Useful when checking errors types on Parse().
+func Parse(err error) (e *Errors, ok bool) {
+	// Try packaged error assertion.
+	e, ok = err.(*Errors)
+	if ok {
+		return
+	}
+
+	// Try ratatxt error assertion as type.
+	// handles un-packaged error with valid type that
+	// can be use to check typed errors.
+	t, ok := err.(ratatxt.Errors)
+	if ok {
+		// Error with no details.
+		return &Errors{t, errors.New(""), false}, true
+	}
+
+	// Cant parse the error.
+	return nil, false
+}

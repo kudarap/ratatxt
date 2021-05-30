@@ -1,0 +1,28 @@
+https://docs.docker.com/engine/reference/builder/#dockerignore-file
+
+Dockerfile*
+docker-compose*
+.dockerignore
+.gitignore
+.env
+*/bin
+*/obj
+README.md
+.DS_Store
+
+# editor
+.idea
+.vscode
+
+# executables
+/rtxapi
+/rtxapi_amd64
+
+# local data
+.localdata
+/data
+/logs
+
+# ui data
+ui/build
+ui/node_modules
