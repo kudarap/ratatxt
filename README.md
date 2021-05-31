@@ -1,11 +1,19 @@
 # Ratatxt
-Enable your android phone into SMS service API.
+Enable SMS API on android devices.
 
-MQTT(Message Queuing Telemetry Transport) keeps the connection with the devices.
+## Overview
+Simple service that enables android devices to be use as SMS API to send and receive SMS.
+Uses MQTT(Message Queuing Telemetry Transport) to send command to devices and keeps connection from the server.
+
+DO NOT USE IN PRODUCTION. MQTT broker is insecure and android client is unstable but you can use it for fun.
+
+## Features
+- Send and receive SMS
+- Deployable on local and cloud server
 
 ## Requirements
-- Local or server machine with Docker
-- Mobile device (Android Nougat 7.1 and below)
+- Local or cloud server with Docker
+- Android device (Nougat 7.1 and below)
 
 ## Setup
 ### 1. Run and install server using docker
@@ -15,6 +23,8 @@ docker run -p 8080:8080 -p 7100:7100 -p 1883:1883 kudarap/ratatxt
 - Console UI on http://localhost:8080
 - REST API on http://localhost:7100
 - MQTT broker on tcp://localhost:1883
+
+If you are running the server on cloud, open up the ports on public network. 
 
 ### 2. Download and install android app
 *Warning: Only tested the app on Android Nougat 7.1*
@@ -110,8 +120,3 @@ curl http://localhost:7100/smsguard/XJE1K \
     "is_valid": true
 }
 ```
-
-## Development
-### Requirements
-- Golang 1.16
-- Docker 20
