@@ -28,7 +28,7 @@ If you are running the server on cloud, open up the ports on public network.
 
 ### 2. Download and install android app
 *Warning: Only tested the app on Android Nougat 7.1*
-- Download debug APK from https://github.com/kudarap/ratatxt-android and install to device.
+- Download debug APK from https://github.com/kudarap/ratatxt-app and install to device.
 - Login your credentials on the app.
 - Select a device available.
 - Start receiver service to receive messages.
