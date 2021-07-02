@@ -51,6 +51,10 @@ function AvatarMenu({ profile }) {
       <StyledMenu
         id="avatar-menu"
         anchorEl={anchorEl}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
         open={Boolean(anchorEl)}
         onClose={handleClose}
         className={classes.menu}>
