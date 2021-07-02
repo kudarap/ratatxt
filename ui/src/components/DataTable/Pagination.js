@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { makeStyles, useTheme } from '@material-ui/core/styles'
+import { useTheme } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/styles'
 import IconButton from '@material-ui/core/IconButton'
 import TablePagination from '@material-ui/core/TablePagination'
 import FirstPageIcon from '@material-ui/icons/FirstPage'
