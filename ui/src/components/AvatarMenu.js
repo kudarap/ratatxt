@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { makeStyles, experimentalStyled as styled, alpha } from '@material-ui/core/styles'
+import {  experimentalStyled as styled, alpha } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/styles'
 import IconButton from '@material-ui/core/IconButton'
 import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
@@ -50,6 +51,10 @@ function AvatarMenu({ profile }) {
       <StyledMenu
         id="avatar-menu"
         anchorEl={anchorEl}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
         open={Boolean(anchorEl)}
         onClose={handleClose}
         className={classes.menu}>

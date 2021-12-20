@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/styles'
 import Container from '@material-ui/core/Container'
 
 import Typography from '../components/Typography'

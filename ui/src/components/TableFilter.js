@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 // import isNumber from 'lodash/isNumber'
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/styles'
 import Popover from '@material-ui/core/Popover'
 import IconButton from '@material-ui/core/IconButton'
 import Radio from '@material-ui/core/Radio'

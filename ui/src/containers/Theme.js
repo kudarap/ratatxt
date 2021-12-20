@@ -2,13 +2,17 @@ import React from 'react'
 import { connect } from 'react-redux'
 import 'matchmedia-polyfill'
 import 'matchmedia-polyfill/matchMedia.addListener'
-import { createTheme } from '@material-ui/core/styles'
-import { ThemeProvider } from '@material-ui/styles'
+import { createTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline'
 import secondary from '@material-ui/core/colors/pink'
 import grey from '@material-ui/core/colors/grey'
+import green from '@material-ui/core/colors/green'
+import yellow from '@material-ui/core/colors/yellow'
 
 import { appSettings } from '../actions'
+import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
 
 const lightPalette = {
   light: '#62a9af',
@@ -194,7 +198,7 @@ function CustomThemeProvider(props) {
   })
 
   // const v4Theme = adaptV4Theme(theme)
-  return <ThemeProvider theme={createTheme(theme)}>{props.children}</ThemeProvider>
+  return <ThemeProvider theme={theme1}>{props.children}</ThemeProvider>
 }
 
 const mapStateToProps = ({ appSettings }) => ({
@@ -210,11 +214,36 @@ const mapDispatchToProps = dispatch => ({
 const LiveThemeProvider = connect(mapStateToProps, mapDispatchToProps)(CustomThemeProvider)
 
 const Theme = Component => props => (
-  <LiveThemeProvider>
+  <CustomThemeProvider>
     {/* CssBaseline kick start an elegant, consistent, and simple baseline to build upon. */}
     <CssBaseline />
+    <Button variant="contained">Hello</Button>
+    <Button variant="contained" color="primary">primary</Button>
+    <Button variant="contained" color="secondary">secondary</Button>
     <Component {...props} />
-  </LiveThemeProvider>
+  </CustomThemeProvider>
 )
 
-export default Theme
+const theme1 = createTheme({
+  palette: {
+    primary: {
+      main: green[500]
+    },
+    secondary: {
+      main: yellow[500]
+    },
+  },
+});
+
+const BasicTheme = Component => props => (
+  <ThemeProvider theme={theme1}>
+    <Typography color="primary">primary</Typography>
+    <Typography color="secondary">secondary</Typography>
+    <Button variant="contained">Hello</Button>
+    <Button variant="contained" color="primary">primary</Button>
+    <Button variant="contained" color="secondary">secondary</Button>
+  </ThemeProvider>
+)
+
+
+export default BasicTheme
